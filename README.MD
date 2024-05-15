@@ -45,17 +45,38 @@ Aquí tienes los pasos detallados para abrir y utilizar la Calculadora Pensional
 
 3. *Ubica el archivo pension_modelo.py el cual esta dentro de la carpeta modelo y tambien  Encuentra el método __init__(self), que se utiliza para inicializar objetos, generalmente ubicado al comienzo de una clase.
 
-3. *Reemplaza los valores de conexión:* Dentro del método _init_(self), encontrarás un bloque de código donde se establece la conexión a la base de datos. Reemplaza los valores de host, database, user y password con los datos de tu propia base de datos.
+4. *Reemplaza los valores de conexión:* Dentro del método _init_(self), encontrarás un bloque de código donde se establece la conexión a la base de datos. Reemplaza los valores de host, database, user y password con los datos de tu propia base de datos.
 
-4. *Guarda y ejecuta:* Guarda el archivo Python con los cambios realizados y ejecuta tu programa. Ahora, tu aplicación Python estará conectada a la base de datos utilizando los datos que proporcionaste.
+5. *Guarda y ejecuta:* Guarda el archivo Python con los cambios realizados y ejecuta tu programa. Ahora, tu aplicación Python estará conectada a la base de datos utilizando los datos que proporcionaste.
 
 **Abrir para ejecutar consola de base de datos:**
 Para ejecutar el archivo main_consola.py desde la terminal, sigue estos pasos:
 
-3. Abre la terminal.
-4. Utiliza el comando cd ruta_de_la_carpeta/PensionCalculatorProGUI-main
-
+6. Abre la terminal.
+7. Utiliza el comando cd ruta_de_la_carpeta/PensionCalculatorProGUI-main
 Asegúrate de reemplazar ruta_de_la_carpeta con la ruta real de la carpeta "PensionCalculatorProGUI-main" en tu sistema.
+3- Una vez en el directorio correcto, puedes ejecutar el archivo pension_vista.py utilizando Python. Coloca el siguiente comando en tu terminal:
+pythonpension_vista.py
+
+8. Instale psycopg2:
+8.1. *Abre tu terminal:* Si estás en Windows, abre el símbolo del sistema o PowerShell. En macOS o Linux, abre la terminal.
+
+8.2. *Instala pip si no lo tienes:* Si no tienes pip instalado, puedes instalarlo ejecutando el siguiente comando en la terminal:
+   
+   python -m ensurepip --default-pip
+   
+8.3. *Instala psycopg2:* Usa pip para instalar psycopg2 ejecutando el siguiente comando en la terminal:
+   
+   pip install psycopg2
+   
+
+8.4. *Espera a que termine la instalación:* pip descargará e instalará psycopg2 y todas las dependencias necesarias. Espera a que termine el proceso.
+
+8.5. *Verifica la instalación:* Después de que la instalación se complete, puedes verificar que psycopg2 esté instalado correctamente ejecutando el siguiente comando en la terminal:
+   
+   pip show psycopg2
+   
+8.6. *¡Listo para usar!:* Ahora puedes importar psycopg2 en tus scripts de Python y utilizarlo para conectarte y trabajar con bases de datos PostgreSQL.
 
 **Abrir para ejecutar consola:**
 3. Una vez en el directorio correcto, puedes ejecutar el archivo pension_vista.py utilizando Python. Coloca el siguiente comando en tu terminal:
