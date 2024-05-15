@@ -19,7 +19,7 @@ Antes de comenzar, asegúrate de tener lo siguiente:
 
 1. **Computadora:** Necesitarás una computadora (Windows, macOS o Linux) para abrir la Calculadora Pensional.
 
-2. **Conexión a Internet:** Asegúrate de tener una conexión a Internet estable para descargar la carpeta "PensionCalculatorProGUI-main".
+2. **Conexión a Internet:** Asegúrate de tener una conexión a Internet estable para descargar la carpeta "PensionCalculatorProBD-main".
 
 3. **Programa de Extracción de Archivos:** Deberás tener instalado un programa que te permita extraer archivos comprimidos, como WinRAR, 7-Zip o el descompresor integrado en tu sistema operativo.
 
@@ -40,7 +40,7 @@ Aquí tienes los pasos detallados para abrir y utilizar la Calculadora Pensional
    - Descarga el archivo comprimido "CalculadoraPensional" desde el enlace proporcionado o desde donde te hayan entregado el archivo.
 
 2. **Extracción de Archivos:**
-   - Abre el archivo comprimido "PensionCalculatorProGUI-main.zip" utilizando un programa de extracción de archivos, como WinRAR o 7-Zip.
+   - Abre el archivo comprimido "PensionCalculatorProBD-main.zip" utilizando un programa de extracción de archivos, como WinRAR o 7-Zip.
    - Extrae todos los archivos de la carpeta en una ubicación de tu elección en tu computadora.
 
 3. *Ubica el archivo pension_modelo.py el cual esta dentro de la carpeta modelo y tambien  Encuentra el método __init__(self), que se utiliza para inicializar objetos, generalmente ubicado al comienzo de una clase.
@@ -50,13 +50,13 @@ Aquí tienes los pasos detallados para abrir y utilizar la Calculadora Pensional
 5. *Guarda y ejecuta:* Guarda el archivo Python con los cambios realizados y ejecuta tu programa. Ahora, tu aplicación Python estará conectada a la base de datos utilizando los datos que proporcionaste.
 
 **Abrir para ejecutar consola de base de datos:**
-Para ejecutar el archivo main_consola.py desde la terminal, sigue estos pasos:
+Para ejecutar el archivo pension_vista.py desde la terminal, sigue estos pasos:
 
 6. Abre la terminal.
-7. Utiliza el comando cd ruta_de_la_carpeta/PensionCalculatorProGUI-main
-Asegúrate de reemplazar ruta_de_la_carpeta con la ruta real de la carpeta "PensionCalculatorProGUI-main" en tu sistema.
+7. Utiliza el comando cd ruta_de_la_carpeta/PensionCalculatorProBD-main
+Asegúrate de reemplazar ruta_de_la_carpeta con la ruta real de la carpeta "PensionCalculatorProBD-main" en tu sistema, navega dentro de la carpeta src, seguidamente vista y dentro de ella enontrarás el archivo pension_vista.py.
 3- Una vez en el directorio correcto, puedes ejecutar el archivo pension_vista.py utilizando Python. Coloca el siguiente comando en tu terminal:
-pythonpension_vista.py
+python pension_vista.py
 
 8. Instale psycopg2:
 8.1. *Abre tu terminal:* Si estás en Windows, abre el símbolo del sistema o PowerShell. En macOS o Linux, abre la terminal.
@@ -79,12 +79,12 @@ pythonpension_vista.py
 8.6. *¡Listo para usar!:* Ahora puedes importar psycopg2 en tus scripts de Python y utilizarlo para conectarte y trabajar con bases de datos PostgreSQL.
 
 **Abrir para ejecutar consola:**
-3. Una vez en el directorio correcto, puedes ejecutar el archivo pension_vista.py utilizando Python. Coloca el siguiente comando en tu terminal:
+3. navega dentro de la carpeta src, seguidamente vista y dentro de ella enontrarás el archivo pension_vista.py., una vez en el directorio correcto, puedes ejecutar el archivo pension_vista.py utilizando Python. Coloca el siguiente comando en tu terminal:
 python pension_vista.py
 
 
 3. **Ubicación del Ejecutable:**
-   - Después de extraer los archivos, encontrarás una carpeta llamada "PensionCalculatorProGUI-main".
+   - Después de extraer los archivos, encontrarás una carpeta llamada "PensionCalculatorProBD-main".
    - Abre esta carpeta y localiza el archivo ejecutable llamado "Ejecutable_Calculadora". Este es el archivo que necesitas ejecutar para abrir la Calculadora Pensional.
 
 **Opción 2: Clonar el Repositorio desde Github:**
@@ -94,7 +94,7 @@ python pension_vista.py
    - Navega hasta el directorio donde deseas clonar el repositorio utilizando el comando cd.
    - Utiliza el siguiente comando para clonar el repositorio desde GitHub:
 
-   git clone https://github.com/usuario/CalculadoraPensional.git
+   git clone https://github.com/usuario/PensionCalculatorProBD.git
 
    Reemplaza usuario por el nombre de usuario de GitHub donde se encuentra el repositorio.
 
@@ -106,23 +106,23 @@ python pension_vista.py
 Para ejecutar el archivo main_consola.py desde la terminal, sigue estos pasos:
 
 3. Abre la terminal.
-4. Utiliza el comando cd ruta_de_la_carpeta/PensionCalculatorProGUI-main
+4. Utiliza el comando cd ruta_de_la_carpeta/PensionCalculatorProBD-main
 
-Asegúrate de reemplazar ruta_de_la_carpeta con la ruta real de la carpeta "PensionCalculatorProGUI-main" en tu sistema.
+Asegúrate de reemplazar ruta_de_la_carpeta con la ruta real de la carpeta "PensionCalculatorProBD-main" en tu sistema.
 
-3. Una vez en el directorio correcto, puedes ejecutar el archivo main_consola.py utilizando Python. Coloca el siguiente comando en tu terminal:
-python main_consola.py
+3. Una vez en el directorio correcto, puedes ejecutar el archivo pension_vista.py utilizando Python. Coloca el siguiente comando en tu terminal:
+python pension_vista.py
 **Abrir para ejecutar consola:**
 
-Para ejecutar el archivo main_consola.py desde la terminal, sigue estos pasos:
+Para ejecutar el archivo pension_vista.py desde la terminal, sigue estos pasos:
 
 3. Abre la terminal.
-4. Utiliza el comando cd ruta_de_la_carpeta/PensionCalculatorProGUI-main
+4. Utiliza el comando cd ruta_de_la_carpeta/PensionCalculatorProBD-main
 
-Asegúrate de reemplazar ruta_de_la_carpeta con la ruta real de la carpeta "PensionCalculatorProGUI-main" en tu sistema.
+Asegúrate de reemplazar ruta_de_la_carpeta con la ruta real de la carpeta "PensionCalculatorProBD-main" en tu sistema.
 
-3. Una vez en el directorio correcto, puedes ejecutar el archivo main_consola.py utilizando Python. Coloca el siguiente comando en tu terminal:
-python main_consola.py
+3. Una vez en el directorio correcto, puedes ejecutar el archivo pension_vista.py utilizando Python. Coloca el siguiente comando en tu terminal:
+python pension_vista.py
 
 4. **Ejecución del Ejecutable:**
    - Haz doble clic en el archivo "Ejecutable_Calculadora" para ejecutarlo.
@@ -144,36 +144,6 @@ python main_consola.py
    - Una vez que hayas utilizado la Calculadora Pensional y obtenido los resultados deseados, puedes cerrar la aplicación haciendo clic en el botón de cierre o saliendo del programa como lo harías con cualquier otra aplicación.
 
  ¡Espero que encuentres útil la aplicación!
-## ¿Cómo está hecho?
-CalculadoraPensional/
-│
-├── Ejecutable_Calculadora        # Archivo ejecutable para abrir la aplicación
-│
-├── src/                           # Carpeta que contiene el código fuente de la aplicación
-│   ├── Console/                   # Carpeta que contiene el código para la versión de consola (no utilizado en la aplicación)
-│   │   └── PensionCalculatorConsole.py
-│   ├── Gui/                       # Carpeta que contiene el código para la interfaz gráfica de usuario
-│   │   └── pension_interface.py
-│   └── Pension_Calculator/        # Carpeta que contiene la lógica de cálculo de la pensión
-│       └── pension_calculator.py
-│
-├── tests/                         # Carpeta que contiene pruebas (no utilizado en la aplicación)
-│   └── PensionCalculatorTests
-│
-└── main.py                        # Archivo principal de Python que inicia la aplicación
-Claro, aquí tienes la estructura de la aplicación "CalculadoraPensional" en formato de texto:
-
-- **Ejecutable_Calculadora:** Archivo ejecutable para abrir la aplicación.
-- **src/:** Carpeta que contiene el código fuente de la aplicación.
-  - **Console/:** Carpeta que contiene el código para la versión de consola (no utilizado en la aplicación).
-    - **PensionCalculatorConsole.py:** Archivo de código para la versión de consola.
-  - **Gui/:** Carpeta que contiene el código para la interfaz gráfica de usuario.
-    - **pension_interface.py:** Archivo de código para la interfaz gráfica de usuario.
-  - **Pension_Calculator/:** Carpeta que contiene la lógica de cálculo de la pensión.
-    - **pension_calculator.py:** Archivo de código para la lógica de cálculo de la pensión.
-- **tests/:** Carpeta que contiene pruebas (no utilizado en la aplicación).
-  - **PensionCalculatorTests:** Archivo de pruebas.
-- **main.py:** Archivo principal de Python que inicia la aplicación.
 
 ## ¿Cómo se hizo el ejecutable? 
 1. Instalamos PyInstaller usando el comando: pip install pyinstaller, una vez instalado
