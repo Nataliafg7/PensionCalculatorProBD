@@ -115,17 +115,17 @@ Para ejecutar el archivo main_consolabd.py desde la terminal, sigue estos pasos:
 
 Asegúrate de reemplazar ruta_de_la_carpeta con la ruta real de la carpeta "PensionCalculatorProBD-main" en tu sistema.
 
-3. Una vez en el directorio correcto, puedes ejecutar el archivo main_consolabd.py utilizando Python. Coloca el siguiente comando en tu terminal:
+5. Una vez en el directorio correcto, puedes ejecutar el archivo main_consolabd.py utilizando Python. Coloca el siguiente comando en tu terminal:
 python main_consolabd.py
 
-4. Una vez se te abre la consola en la terminal aparecerá un menú con 7 opciones, el cuál para navegar en él tendrás que seleccionar el número correspondiente a la opción deseada.
+6. Una vez se te abre la consola en la terminal aparecerá un menú con 7 opciones, el cuál para navegar en él tendrás que seleccionar el número correspondiente a la opción deseada.
 
 
-5. **Uso de la aplicación:**
+7. **Uso de la aplicación:**
 - Completa los campos requeridos con la información relevante, como la edad actual, el salario, las semanas laboradas, etc.
 - La aplicación mostrará los resultados en pantalla.
 
-7. **Finalización de la Aplicación:**
+8. **Finalización de la Aplicación:**
    - Una vez que hayas utilizado la Calculadora Pensional y obtenido los resultados deseados, puedes cerrar la aplicación seleccionando la opción correspondiente.
 
  ¡Espero que encuentres útil la aplicación!
