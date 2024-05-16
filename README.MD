@@ -27,12 +27,14 @@ Antes de comenzar, asegúrate de tener lo siguiente:
 
 5. **Permisos de Ejecución:** Es posible que necesites tener permisos de ejecución para ejecutar el archivo ejecutable "Ejecutable_Calculadora". Si estás utilizando un sistema operativo que requiere permisos de administrador, asegúrate de tenerlos.
 
-Con estos prerrequisitos, estarás listo/a para abrir y utilizar la Calculadora Pensional en tu computadora. Si tienes alguna pregunta o necesitas ayuda adicional, no dudes en contactarnos. ¡Disfruta utilizando la Calculadora Pensional!
-
 6. **instalar**
 instale el paquete psycho2 con el siguiente comando:
 
 pip install psycopg2-binary
+
+
+Con estos prerrequisitos, estarás listo/a para abrir y utilizar la Calculadora Pensional en tu computadora. Si tienes alguna pregunta o necesitas ayuda adicional, no dudes en contactarnos. ¡Disfruta utilizando la Calculadora Pensional!
+
 
 ### Entradas para calcular la pensión:
  - **Edad actual:** La edad actual del individuo.
