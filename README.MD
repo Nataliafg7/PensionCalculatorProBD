@@ -29,63 +29,38 @@ Antes de comenzar, asegúrate de tener lo siguiente:
 
 Con estos prerrequisitos, estarás listo/a para abrir y utilizar la Calculadora Pensional en tu computadora. Si tienes alguna pregunta o necesitas ayuda adicional, no dudes en contactarnos. ¡Disfruta utilizando la Calculadora Pensional!
 
-### Ejecución:
+6. **instalar**
+instale el paquete psycho2 con el siguiente comando:
+
+pip install psycopg2-binary
+
+### Entradas para calcular la pensión:
+ - **Edad actual:** La edad actual del individuo.
+ - **Sexo:** El género del individuo (hombre/mujer).
+ - **Salario actual:** El salario actual del individuo.
+ - **Número de semanas laboradas:** El número de semanas que el individuo ha trabajado.
+ - **Ahorro actual:** El monto de ahorro actual del individuo.
+ - **Rentabilidad del fondo (%):** La rentabilidad esperada del fondo de pensiones en forma de porcentaje.
+ - **Tasa de administración del fondo (%):** La tasa de administración del fondo de pensiones en forma de porcentaje.
+
+### Salidas del cálculo de la pensión:
+ - **Valor del ahorro pensional esperado:** El valor estimado del ahorro pensional esperado.
+ - **Valor de la pensión anual:** El valor estimado de la pensión anual.
+ - **Valor de la pensión mensual:** El valor estimado de la pensión mensual.
+
+## Ejecución:
 ### Paso a Paso para Abrir la Calculadora Pensional
 
 Aquí tienes los pasos detallados para abrir y utilizar la Calculadora Pensional:
-### Conexión a la base de datos:
+
 **Opción 1: Descargar desde GitHub:**
 
 1. **Descarga de Archivos:**
-   - Descarga el archivo comprimido "CalculadoraPensional" desde el enlace proporcionado o desde donde te hayan entregado el archivo.
+   - Descarga el archivo comprimido "PensionCalculatorProBD" desde el enlace proporcionado o desde donde te hayan entregado el archivo.
 
 2. **Extracción de Archivos:**
    - Abre el archivo comprimido "PensionCalculatorProBD-main.zip" utilizando un programa de extracción de archivos, como WinRAR o 7-Zip.
    - Extrae todos los archivos de la carpeta en una ubicación de tu elección en tu computadora.
-
-3. *Ubica el archivo pension_modelo.py el cual esta dentro de la carpeta modelo y tambien  Encuentra el método __init__(self), que se utiliza para inicializar objetos, generalmente ubicado al comienzo de una clase.
-
-4. *Reemplaza los valores de conexión:* Dentro del método _init_(self), encontrarás un bloque de código donde se establece la conexión a la base de datos. Reemplaza los valores de host, database, user y password con los datos de tu propia base de datos.
-
-5. *Guarda y ejecuta:* Guarda el archivo Python con los cambios realizados y ejecuta tu programa. Ahora, tu aplicación Python estará conectada a la base de datos utilizando los datos que proporcionaste.
-
-**Abrir para ejecutar consola de base de datos:**
-Para ejecutar el archivo pension_vista.py desde la terminal, sigue estos pasos:
-
-6. Abre la terminal.
-7. Utiliza el comando cd ruta_de_la_carpeta/PensionCalculatorProBD-main
-Asegúrate de reemplazar ruta_de_la_carpeta con la ruta real de la carpeta "PensionCalculatorProBD-main" en tu sistema, navega dentro de la carpeta src, seguidamente vista y dentro de ella enontrarás el archivo pension_vista.py.
-3- Una vez en el directorio correcto, puedes ejecutar el archivo pension_vista.py utilizando Python. Coloca el siguiente comando en tu terminal:
-python pension_vista.py
-
-8. Instale psycopg2:
-8.1. *Abre tu terminal:* Si estás en Windows, abre el símbolo del sistema o PowerShell. En macOS o Linux, abre la terminal.
-
-8.2. *Instala pip si no lo tienes:* Si no tienes pip instalado, puedes instalarlo ejecutando el siguiente comando en la terminal:
-   
-   python -m ensurepip --default-pip
-   
-8.3. *Instala psycopg2:* Usa pip para instalar psycopg2 ejecutando el siguiente comando en la terminal:
-   
-   pip install psycopg2
-   
-
-8.4. *Espera a que termine la instalación:* pip descargará e instalará psycopg2 y todas las dependencias necesarias. Espera a que termine el proceso.
-
-8.5. *Verifica la instalación:* Después de que la instalación se complete, puedes verificar que psycopg2 esté instalado correctamente ejecutando el siguiente comando en la terminal:
-   
-   pip show psycopg2
-   
-8.6. *¡Listo para usar!:* Ahora puedes importar psycopg2 en tus scripts de Python y utilizarlo para conectarte y trabajar con bases de datos PostgreSQL.
-
-**Abrir para ejecutar consola:**
-3. navega dentro de la carpeta src, seguidamente vista y dentro de ella enontrarás el archivo pension_vista.py., una vez en el directorio correcto, puedes ejecutar el archivo pension_vista.py utilizando Python. Coloca el siguiente comando en tu terminal:
-python pension_vista.py
-
-
-3. **Ubicación del Ejecutable:**
-   - Después de extraer los archivos, encontrarás una carpeta llamada "PensionCalculatorProBD-main".
-   - Abre esta carpeta y localiza el archivo ejecutable llamado "Ejecutable_Calculadora". Este es el archivo que necesitas ejecutar para abrir la Calculadora Pensional.
 
 **Opción 2: Clonar el Repositorio desde Github:**
 
@@ -98,64 +73,89 @@ python pension_vista.py
 
    Reemplaza usuario por el nombre de usuario de GitHub donde se encuentra el repositorio.
 
-2. **Ubicación del ejecutable:**
-   - Una vez que se haya completado la clonación, navega hasta la carpeta recién creada CalculadoraPensional.
-   - Dentro de esta carpeta, navega una carpeta llamada build, encontrarás el archivo ejecutable llamado "Ejecutable_Calculadora". Este es el archivo que necesitas ejecutar para abrir la Calculadora Pensional.
 
-**Abrir para ejecutar consola de base de datos:**
-Para ejecutar el archivo main_consola.py desde la terminal, sigue estos pasos:
+## Conexión a la base de datos:
+
+1. **Accede al sitio web de Neon:**
+Ve a Neon.Tech desde tu navegador web.
+
+2. **Regístrate o inicia sesión:**
+Si aún no tienes una cuenta, regístrate en la plataforma. De lo contrario, inicia sesión con tus credenciales.
+
+3. **Crea un nuevo proyecto:**
+Una vez dentro, crea un nuevo proyecto. Elige un título para el proyecto y nombra la base de datos como "Calculadora_Impuestos".
+
+4. **Accede al panel de control (Dashboard):**
+Después de crear el proyecto y la base de datos, ve al panel de control.
+
+5. **Obtén la cadena de conexión:**
+En el panel de control, busca la opción de "Connection string" y selecciónala. Luego elige la opción "Parameters only". Esto te proporcionará una cadena de conexión que necesitarás más adelante.
+
+6. **Copia la cadena de conexión:**
+Copia todo el contenido del campo de texto proporcionado con la cadena de conexión.
+
+7. **Ubica el archivo SecretConfigSample.py:**
+En el repositorio de tu proyecto, busca la carpeta "src" y luego la carpeta "controller". Dentro de esta carpeta, encontrarás un archivo llamado "SecretConfigSample.py".
+
+6. **Pega la cadena de conexión:**
+Abre el archivo "SecretConfigSample.py" y pega los parámetros de la cadena de conexión que copiaste en el paso anterior.
+
+7. **Renombra el archivo:**
+Por último, cambia el nombre del archivo "SecretConfigSample.py" por "SecretConfig.py". Esto asegurará que el sistema reconozca la configuración de la base de datos.
+
+
+## Abrir para ejecutar consola:
+
+Para ejecutar el archivo main_consolabd.py desde la terminal, sigue estos pasos:
 
 3. Abre la terminal.
 4. Utiliza el comando cd ruta_de_la_carpeta/PensionCalculatorProBD-main
 
 Asegúrate de reemplazar ruta_de_la_carpeta con la ruta real de la carpeta "PensionCalculatorProBD-main" en tu sistema.
 
-3. Una vez en el directorio correcto, puedes ejecutar el archivo pension_vista.py utilizando Python. Coloca el siguiente comando en tu terminal:
-python pension_vista.py
-**Abrir para ejecutar consola:**
+3. Una vez en el directorio correcto, puedes ejecutar el archivo main_consolabd.py utilizando Python. Coloca el siguiente comando en tu terminal:
+python main_consolabd.py
 
-Para ejecutar el archivo pension_vista.py desde la terminal, sigue estos pasos:
-
-3. Abre la terminal.
-4. Utiliza el comando cd ruta_de_la_carpeta/PensionCalculatorProBD-main
-
-Asegúrate de reemplazar ruta_de_la_carpeta con la ruta real de la carpeta "PensionCalculatorProBD-main" en tu sistema.
-
-3. Una vez en el directorio correcto, puedes ejecutar el archivo pension_vista.py utilizando Python. Coloca el siguiente comando en tu terminal:
-python pension_vista.py
-
-4. **Ejecución del Ejecutable:**
-   - Haz doble clic en el archivo "Ejecutable_Calculadora" para ejecutarlo.
-   - Dependiendo de tu sistema operativo, es posible que necesites confirmar que deseas ejecutar el archivo.
-   - Una vez que aparezca ventana de "Ejecutable_Calculadora", en la parte superior derecha de la ventana encontrarás 3 íconos, selecciona el de la mitad, el cuál es un cuadrado sobre otro cuadrado, llamado "Restore Down".
-
-5. **Interfaz de la Calculadora:**
-   - Una vez que se haya ejecutado el archivo, debería abrirse la interfaz de la Calculadora Pensional.
-   - Puedes utilizar la interfaz para ingresar los datos necesarios y calcular la pensión.
-
-6. **Uso de la Aplicación:**
-   - Completa los campos requeridos con la información relevante, como la edad actual, el salario, las semanas laboradas, etc.
-   - Haz clic en el botón "Calcular" para obtener los resultados de la pensión.
-   - La aplicación mostrará los resultados en una nueva ventana o pantalla.
+4. Una vez se te abre la consola en la terminal aparecerá un menú con 7 opciones, el cuál para navegar en él tendrás que seleccionar el número correspondiente a la opción deseada.
 
 
+5. **Uso de la aplicación:**
+- Completa los campos requeridos con la información relevante, como la edad actual, el salario, las semanas laboradas, etc.
+- La aplicación mostrará los resultados en pantalla.
 
 7. **Finalización de la Aplicación:**
-   - Una vez que hayas utilizado la Calculadora Pensional y obtenido los resultados deseados, puedes cerrar la aplicación haciendo clic en el botón de cierre o saliendo del programa como lo harías con cualquier otra aplicación.
+   - Una vez que hayas utilizado la Calculadora Pensional y obtenido los resultados deseados, puedes cerrar la aplicación seleccionando la opción correspondiente.
 
  ¡Espero que encuentres útil la aplicación!
+   
+## Abrir para ejecutar pruebas unitarias:
 
-## ¿Cómo se hizo el ejecutable? 
-1. Instalamos PyInstaller usando el comando: pip install pyinstaller, una vez instalado
-2. Abrimos la terminal en main.py e ingresamos el siguiente comando: pyinstaller --onefile --windowed main.py
-3. Esto creó un archivo el cual llamamos Ejecutable_calculadora.exe
+Para ejecutar el archivo test_bd.py desde la terminal, sigue estos pasos:
 
+3. Abre la terminal.
+4. Utiliza el comando cd ruta_de_la_carpeta/PensionCalculatorProBD-main
 
-Bibliotecas Utilizadas:
+Asegúrate de reemplazar ruta_de_la_carpeta con la ruta real de la carpeta "PensionCalculatorProBD-main" en tu sistema.
+
+**NOTA:** tener en cuenta que el archivo test_bd.py se encuentra dentro de la carpeta tests.
+
+3. Una vez en el directorio correcto, puedes ejecutar el archivo test_bd.py utilizando Python. Coloca el siguiente comando en tu terminal:
+python test_bd.py
+
+## ¿Cómo se integró una base de datos de Neon Tech a Python?
+1. Se instala psycopg2 usando el comando: pip install psycopg2.
+2. Una vez instalado el controlador, podrás conectarte a tu base de datos desde Python y realizar operaciones como consultas, inserciones, actualizaciones, etc., según sea necesario.
+
+**Bibliotecas Utilizadas:**
 El proyecto hace uso de las siguientes bibliotecas estándar de Python:
 
-unittest: Utilizada para escribir y ejecutar pruebas unitarias.
+**unittest:** Utilizada para escribir y ejecutar pruebas unitarias.
 
-Dependencias de Otros Proyectos:
+**sys:** Biblioteca estándar de Python para manipular el entorno de ejecución del sistema, como la gestión de argumentos de línea de comandos y rutas de acceso.
+
+**psycopg2:** Adaptador de base de datos PostgreSQL para Python, utilizado para conectarse a bases de datos PostgreSQL, ejecutar consultas SQL y manipular datos desde Python.
+
+**Dependencias de Otros Proyectos:**
 El proyecto no tiene dependencias externas a otros proyectos. Todas las funcionalidades están implementadas dentro del propio proyecto sin requerir bibliotecas externas.
+
 
