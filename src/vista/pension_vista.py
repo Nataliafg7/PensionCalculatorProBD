@@ -53,29 +53,28 @@ class PensionVista:
         self.controlador.insertar_pension(datos_pension)
 
     def actualizar_datos_pension(self):
-        id_pension = input("Ingrese el ID de la pensión que desea actualizar: ")
-        edad_actual = input("Ingrese su nueva edad actual: ")
+        id_pension = int(input("Ingrese el ID de la pensión que desea actualizar: "))
+        edad_actual = int(input("Ingrese su nueva edad actual: "))
         sexo = input("Ingrese su nuevo sexo (mujer/hombre): ")
-        salario_actual = input("Ingrese su nuevo salario actual: ")
-        semanas_laboradas = input("Ingrese el nuevo número de semanas laboradas: ")
-        ahorro_actual = input("Ingrese su nuevo ahorro actual: ")
-        rentabilidad_fondo = input("Ingrese la nueva rentabilidad del fondo (%): ")
-        tasa_administracion = input("Ingrese la nueva tasa de administración del fondo (%): ")
+        salario_actual = int(input("Ingrese su nuevo salario actual: "))
+        semanas_laboradas = int(input("Ingrese el nuevo número de semanas laboradas: "))
+        ahorro_actual = int(input("Ingrese su nuevo ahorro actual: "))
+        rentabilidad_fondo = int(input("Ingrese la nueva rentabilidad del fondo (%): "))
+        tasa_administracion = int(input("Ingrese la nueva tasa de administración del fondo (%): "))
         datos_pension = (edad_actual, sexo, salario_actual, semanas_laboradas, ahorro_actual, rentabilidad_fondo,
-                         tasa_administracion)
+                        tasa_administracion)
         self.controlador.actualizar_pension(id_pension, datos_pension)
 
-
     def eliminar_datos_pension(self):
-        id_pension = input("Ingrese el ID de la pensión que desea eliminar: ")
+        id_pension = int(input("Ingrese el ID de la pensión que desea eliminar: "))
         self.controlador.eliminar_pension(id_pension)
 
     def consultar_datos_pension(self):
-        id_pension = input("Ingrese el ID de la pensión que desea consultar: ")
+        id_pension = int(input("Ingrese el ID de la pensión que desea eliminar: "))
         self.controlador.obtener_pension(id_pension)
 
     def calcular_pension_para_id(self):
-        id_pension = input("Ingrese el ID de la pensión para calcular la pensión: ")
+        id_pension = int(input("Ingrese el ID de la pensión que desea eliminar: "))
         try:
             id_pension = int(id_pension)
             self.controlador.calcular_pension_para_id(id_pension)
@@ -121,7 +120,7 @@ class PensionVista:
         print("9. Volver al Menú Principal")
 
     def consultar_por_id(self):
-        id_pension = input("Ingrese el ID de la pensión que desea consultar: ")
+        id_pension = int(input("Ingrese el ID de la pensión que desea eliminar: "))
         self.controlador.consultar_por_id(id_pension)
 
     def consultar_por_edad(self):
@@ -153,7 +152,7 @@ class PensionVista:
         self.controlador.consultar_por_tasa_administracion(tasa_administracion)
 
     def calcular_pension_para_id(self):
-        id_pension = input("Ingrese el ID de la pensión para calcular: ")
+        id_pension = int(input("Ingrese el ID de la pensión que desea eliminar: "))
         self.controlador.calcular_pension_para_id(id_pension)
 
 if __name__ == '__main__':
