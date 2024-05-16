@@ -14,19 +14,35 @@ class PensionControlador:
     def insertar_pension(self, datos_pension):
         self.modelo.insertar_pension(datos_pension)
         print("Datos de pensión insertados correctamente.")
-
+        print (f"Datos de la pension: {datos_pension}")
+    
     def actualizar_pension(self, id_pension, datos_pension):
         # Verificar si la pensión con el ID especificado existe
         if not self.verificar_existencia_pension(id_pension):
             raise ValueError(f"No se encontró una pensión con el ID {id_pension}")
+        
+        # Validar los datos de la pensión
+        self.validar_datos_pension(datos_pension)
+        
+        # Actualizar los datos de la pensión en la base de datos
+        self.modelo.actualizar_pension(id_pension, datos_pension)
+        
+        print(f"Datos de pensión con ID {id_pension} actualizados correctamente.")
 
     def eliminar_pension(self, id_pension):
         self.modelo.eliminar_pension(id_pension)
         print(f"Datos de pensión con ID {id_pension} eliminados correctamente.")
 
     def verificar_existencia_pension(self, id_pension):
-        # Lógica para verificar la existencia de la pensión
-        pass
+        # Consultar la base de datos para verificar la existencia de la pensión con el ID especificado
+        pension = self.modelo.obtener_pension(id_pension)
+        if pension:
+            # Si se encuentra la pensión, devolver True
+            return True
+        else:
+            # Si no se encuentra la pensión, devolver False
+            return False
+
 
     def consultar_por_id(self, id_pension):
         pension = self.modelo.obtener_pension(id_pension)
